@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <a href="#" class="navbar-brand">CVRCE</a>
+<body onload="render()">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <a href="#" class="navbar-brand"><img src="images/cvr-logo.png" alt="CVRCE"  height="30" width="41"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -78,6 +78,8 @@
                     <li class="active" data-target="#car" data-slide-to="0"></li>
                     <li data-target="#car" data-slide-to="1"></li>
                     <li data-target="#car" data-slide-to="2"></li>
+                    <li data-target="#car" data-slide-to="3"></li>
+                    <li data-target="#car" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-item active">
                     <img src="images/DPP_1.jpg" class="img-fluid" style="height:400px;
@@ -100,6 +102,20 @@
                         <h3>Main Block</h3>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img src="images/aerial-view.png" class="img-fluid" style="height:400px;
+                    width:100%">
+                    <div class="carousel-caption">
+                        <h3>Aerial view</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cvr-canteen.jpg" class="img-fluid" style="height:400px;
+                    width:100%">
+                    <div class="carousel-caption">
+                        <h3>Canteen</h3>
+                    </div>
+                </div>
             </div>
             <a href="#car" class="carousel-control-prev" data-slide="prev">
                 <span class="carousel-control-prev-icon">
@@ -118,7 +134,7 @@
         <span class="carousel-control-next-icon"></span>
     </a> -->
     <br />
-    <div class="container" style="height:150px;">
+    <div class="container" style="height:200px;">
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a href="#notif" class="nav-link active" data-toggle="tab">
@@ -127,7 +143,7 @@
             </li>
             <li class="nav-item">
                 <a href="#news" class="nav-link" data-toggle="tab">
-                    Latest News
+                   Fee Payments
                 </a>
             </li>
         </ul>
@@ -135,58 +151,31 @@
         <div class="tab-content">
             <li class="tab-pane active" id="notif">
 
-                <p>FEE Training is started for the Virtusa Recruits </p>
-                <p>Technical Talk by Jogesh Muppala on MEAN Stack on 25.06.2020 </p>
+                <p>Check out timetables for online classes II,III,IV years - <a href="https://drive.google.com/drive/folders/1LiuDh-dj-yqIglHiwx4a2UbtL5_YGkdz">Click here</a> </p>
+                <p>Exams for previous semesters will be conducted provisionally </p>
 
             </li>
             <li class="tab-pane" id="news">
-                This tab contains Latest News
+                <p><a href="http://cvr.ac.in">Hostel Fees</a></p>
+                <p><a href="http://cvr.ac.in">Tuition Fees</a></p>
+                <p><a href="http://cvr.ac.in">Transport Fees</a> </p>
+                <p><a href="http://cvr.ac.in">Miscellaneous Fees</a></p>
             </li>
         </div>
     </div>
-    <div class="container">
-        <div class="card" style="width:300px; float:left;margin:10px;">
-
-            <div class="card-body">
-                <img src="images/cse-department.png" class="img-fluid">
-            </div>
-            <div class="card-footer">
-                <p class="h4">CSE Logo</p>
-                <p class="text-muted text-justify text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium enim doloremque
-                    numquam assumenda!
-                </p>
-            </div>
+    <div class="container" >
+        <div  id="logo1">
+            <span class="fa fa-spinner fa-spin fa-3x fa-primay"></span>Loading,Please wait
         </div>
-        <div class="card" style="width:300px; float:left;margin:10px;">
-
-            <div class="card-body">
-                <img src="images/cse-department.png" class="img-fluid">
-            </div>
-            <div class="card-footer">
-                <p class="h4">CSE Logo</p>
-                <p class="text-muted text-justify text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium enim doloremque
-                    numquam assumenda!
-                </p>
-            </div>
+        <div  id="logo2">
+            <span class="fa fa-spinner fa-spin fa-3x fa-primay"></span>Loading,Please wait
         </div>
-        <div class="card" style="width:300px; float:left;margin:10px;">
-
-            <div class="card-body">
-                <img src="images/cse-department.png" class="img-fluid">
-            </div>
-            <div class="card-footer">
-                <p class="h4">CSE Logo</p>
-                <p class="text-muted text-justify text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium enim doloremque
-                    numquam assumenda!
-                </p>
-            </div>
+        <div  id="logo3">
+            <span class="fa fa-spinner fa-spin fa-3x fa-primay"></span>Loading,Please wait
         </div>
     </div>
 
-    <div class="jumbotron bg-warning" style="clear:both;">
+    <div class="jumbotron" style="clear:both;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 align-self-center">
@@ -208,6 +197,7 @@
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://use.fontawesome.com/f5cf23ddbf.js"></script>
 
 </body>
